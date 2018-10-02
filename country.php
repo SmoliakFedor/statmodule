@@ -1,6 +1,6 @@
 <?php
-
- class country
+namespace Entity;
+ class Country
  {
      private  $idCountry;
      private  $nameCountry;

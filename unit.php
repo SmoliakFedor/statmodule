@@ -1,7 +1,7 @@
 <?php
+namespace Entity;
 
-
-class unit
+class Unit
 {
     private $idUnit;
     private $type;

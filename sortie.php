@@ -29,7 +29,7 @@ class Sortie
      * @param $userSortie
      * @param User $user
      */
-    public function __construct($idSortie, $country, $end, Mission $mission, $start, $status, $unit, $userSortie, User $user)
+    public function __construct($idSortie, Country $country, $end, Mission $mission, $start, $status, Unit $unit, $userSortie, User $user)
     {
         $this->idSortie=$idSortie;
         $this->mission=$mission;
@@ -78,7 +78,7 @@ class Sortie
     /**
      * @param mixed $unit
      */
-    public function setUnit($unit)
+    public function setUnit(Unit $unit)
     {
         $this->unit = $unit;
     }
@@ -86,7 +86,7 @@ class Sortie
     /**
      * @param mixed $country
      */
-    public function setCountry($country)
+    public function setCountry(Country $country)
     {
         $this->country = $country;
     }
@@ -134,7 +134,7 @@ class Sortie
     /**
      * @return mixed
      */
-    public function getCountry()
+    public function getCountry() : Country
     {
         return $this->country;
     }
@@ -174,7 +174,7 @@ class Sortie
     /**
      * @return mixed
      */
-    public function getUnit()
+    public function getUnit() : Unit
     {
         return $this->unit;
     }
