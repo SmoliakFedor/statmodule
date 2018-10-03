@@ -3,19 +3,20 @@ namespace Entity;
 
 class Sortie
 {
-    private $idSortie;
-    protected $mission;
-    private $userSortie;
-    private $unit;
-    private $country;
-    private $start;
-    private $end;
-    private $status;
+    public$id;
+    public $mission;
+    public $userSortie;
+    public $unit;
+    public $country;
+    public $start;
+    public $end;
+    public $status;
+    public $event = [];
 
     /**
      * @var User
      */
-    protected $user;
+    public $user;
 
     /**
      * Sortie constructor.
@@ -29,18 +30,7 @@ class Sortie
      * @param $userSortie
      * @param User $user
      */
-    public function __construct($idSortie, Country $country, $end, Mission $mission, $start, $status, Unit $unit, $userSortie, User $user)
-    {
-        $this->idSortie=$idSortie;
-        $this->mission=$mission;
-        $this->userSortie=$userSortie;
-        $this->unit=$unit;
-        $this->country=$country;
-        $this->start=$start;
-        $this->end=$end;
-        $this->status=$status;
-        $this->user = $user;
-    }
+
 
     /**
      * @param User $user

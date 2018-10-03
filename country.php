@@ -2,16 +2,10 @@
 namespace Entity;
  class Country
  {
-     private  $idCountry;
-     private  $nameCountry;
-     private  $coalition;
+     public  $idCountry;
+     public  $nameCountry;
+     public  $coalition;
 
-//     public function __construct($coalition, $idCountry, $nameCountry)
-//     {
-//         $this->coalition=$coalition;
-//         $this->idCountry=$idCountry;
-//         $this->nameCountry=$nameCountry;
-//     }
 
      public function setCountry($nameCountry)
      {

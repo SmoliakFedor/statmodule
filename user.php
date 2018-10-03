@@ -3,22 +3,14 @@ namespace Entity;
 
 class User
 {
-    protected $idUser;
-    private $nameUser;
-    private $password;
-    private $registrationTime;
-    private $sortieCount;
-    private $flyingHours;
+    public $id;
+    public $nameUser;
+    public $password;
+    public $registrationTime;
+    public $sortie = [];
+    public $flyingHours;
 
-//    public function __construct($idUser, $nameUser, $password, $registrationTime, $sortieCount, $flyingHours)
-//    {
-//        $this->idUser=$idUser;
-//        $this->nameUser=$nameUser;
-//        $this->password=$password;
-//        $this->registrationTime=$registrationTime;
-//        $this->sortieCount=$sortieCount;
-//        $this->flyingHours=$flyingHours;
-//    }
+
     /**
      * @param mixed $idUser
      */

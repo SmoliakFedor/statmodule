@@ -3,18 +3,14 @@ namespace Entity;
 
 class Mission
 {
-    private $idMission;
-    private $nameMission;
-    private $describe;
-    private $winner;
+    public $idMission;
+    public $nameMission;
+    public $describe;
+    public $winner;
 
-    public function __construct($describe, $idMission, $nameMission, $winner)
-    {
-        $this->idMission=$idMission;
-        $this->nameMission=$nameMission;
-        $this->describe=$describe;
-        $this->winner=$winner;
-    }
+    public $sortie = [];
+
+
 
     /**
      * @param mixed $idMission

@@ -1,26 +1,14 @@
 <?php
 namespace Entity;
-/**
- * Created by PhpStorm.
- * User: user
- * Date: 27.09.18
- * Time: 16:07
- */
 
-class event
+class Event
 {
-    private $idEvent;
-    protected $sortie;
-    private $timeEvent;
-    private $eventType;
+    public $idEvent;
+    public $sortie;
+    public $timeEvent;
+    public $eventType;
 
-    public function __construct($idEvent, Sortie $sortie, $timeEvent, $eventType)
-    {
-        $this->idEvent=$idEvent;
-        $this->sortie=$sortie;
-        $this->timeEvent=$timeEvent;
-        $this->eventType=$eventType;
-    }
+
 
     /**
      * @param mixed $idEvent

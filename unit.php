@@ -3,18 +3,12 @@ namespace Entity;
 
 class Unit
 {
-    private $idUnit;
-    private $type;
-    private $subtype;
-    private $nameUnit;
+    public $idUnit;
+    public $type;
+    public $subtype;
+    public $nameUnit;
 
-//    public function __construct($idUnit, $type, $subtype, $nameUnit)
-//    {
-//        $this->idUnit=$idUnit;
-//        $this->type=$type;
-//        $this->subtype=$subtype;
-//        $this->nameUnit=$nameUnit;
-//    }
+
     /**
      * @param mixed $idUnit
      */
